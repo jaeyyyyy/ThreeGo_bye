@@ -1,6 +1,6 @@
 package com.data;
 
-public class TourItemDTO {
+public class TouritemDTO {
     private String contentid;
     private String cat1;
     private String cat2;

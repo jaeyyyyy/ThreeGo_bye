@@ -53,7 +53,7 @@ public class InsertData {
 
                 for(int i = 0; i < item.size(); i++){
                     TouritemDAO dao = new TouritemDAO();
-                    TourItemDTO dto = new TourItemDTO();
+                    TouritemDTO dto = new TouritemDTO();
                     JSONObject tourItem = (JSONObject)item.get(i);
 
                     String firstImage = ((String)tourItem.get("firstimage")).equals("") ? altImg : (String)tourItem.get("firstimage");
