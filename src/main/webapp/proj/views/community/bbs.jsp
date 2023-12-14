@@ -10,7 +10,7 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="../../resources/assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="../../resources/assets/css/style.css" rel="stylesheet" />
-    <title>프로젝트 이름</title>
+    <title>커뮤니티</title>
 </head>
 <body>
 <!-- Nav bar-->
@@ -40,7 +40,7 @@
                             <a class="nav-link" href="#">로그인</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">회원가입</a>
+                            <a class="nav-link" href="../join/join.jsp">회원가입</a>
                         </li>
                     </div>
                 </ul>
