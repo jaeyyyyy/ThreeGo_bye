@@ -6,6 +6,7 @@ public class InsertMain {
 
         insert.areaCode();
         insert.categoryCode();
+        insert.tourItem();
 
     }
 }
