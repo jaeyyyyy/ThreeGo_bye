@@ -74,8 +74,4 @@ public class JDBConnect {
             e.printStackTrace();
         }
     }
-
-
 }
-
-//수정
