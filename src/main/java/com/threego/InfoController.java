@@ -28,6 +28,5 @@ public class InfoController extends HttpServlet {
         if(cat3 != null) map.put(cat3, "cat3");
         if(type != null) map.put(type, "type");
 
-
     }
 }

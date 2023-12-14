@@ -1,23 +1,23 @@
 package com.data;
 
 public class SigunguDTO {
-    private String s_sigungucode;
-    private String s_areacode;
+    private int s_sigungucode;
+    private int s_areacode;
     private String sigungu_name;
 
-    public String getS_sigungucode() {
+    public int getS_sigungucode() {
         return s_sigungucode;
     }
 
-    public void setS_sigungucode(String s_sigungucode) {
+    public void setS_sigungucode(int s_sigungucode) {
         this.s_sigungucode = s_sigungucode;
     }
 
-    public String getS_areacode() {
+    public int getS_areacode() {
         return s_areacode;
     }
 
-    public void setS_areacode(String s_areacode) {
+    public void setS_areacode(int s_areacode) {
         this.s_areacode = s_areacode;
     }
 

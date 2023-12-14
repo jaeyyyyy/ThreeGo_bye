@@ -1,14 +1,14 @@
 package com.data;
 
 public class AreaDTO {
-    private String j_areacode;
+    private int j_areacode;
     private String j_area_name;
 
-    public String getJ_areacode() {
+    public int getJ_areacode() {
         return j_areacode;
     }
 
-    public void setJ_areacode(String j_areacode) {
+    public void setJ_areacode(int j_areacode) {
         this.j_areacode = j_areacode;
     }
 

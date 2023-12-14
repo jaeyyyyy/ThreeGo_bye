@@ -89,7 +89,7 @@ public class TouritemDAO extends JDBConnect {
                 query += "type = " + map.get("type") + " ";
             }
         }
-        query += " ORDER BY num DESC";
+        query += " ORDER BY contentid DESC";
 
         try {
             stmt = con.createStatement();
@@ -103,15 +103,15 @@ public class TouritemDAO extends JDBConnect {
                 dto.setCat1(rs.getString("cat1"));
                 dto.setCat2(rs.getString("cat2"));
                 dto.setCat3(rs.getString("cat3"));
-                dto.setAreacode(rs.getString("areacode"));
-                dto.setContenttypeid(rs.getString("contenttypeid"));
+                dto.setAreacode(rs.getInt("areacode"));
+                dto.setContenttypeid(rs.getInt("contenttypeid"));
                 dto.setAddr1(rs.getString("addr1"));
                 dto.setAddr2(rs.getString("addr2"));
                 dto.setFirstimage(rs.getString("firstimage"));
                 dto.setMapx(rs.getString("mapx"));
                 dto.setMapy(rs.getString("mapy"));
                 dto.setMlevel(rs.getString("mlevel"));
-                dto.setSigungucode(rs.getString("sigungucode"));
+                dto.setSigungucode(rs.getInt("sigungucode"));
                 dto.setTel(rs.getString("tel"));
                 dto.setTitle(rs.getString("title"));
 
@@ -142,15 +142,15 @@ public class TouritemDAO extends JDBConnect {
             psmt.setString(2,dto.getCat1());
             psmt.setString(3,dto.getCat2());
             psmt.setString(4,dto.getCat3());
-            psmt.setString(5,dto.getAreacode());
-            psmt.setString(6,dto.getContenttypeid());
+            psmt.setInt(5,dto.getAreacode());
+            psmt.setInt(6,dto.getContenttypeid());
             psmt.setString(7,dto.getAddr1());
             psmt.setString(8,dto.getAddr2());
             psmt.setString(9,dto.getFirstimage());
             psmt.setString(10,dto.getMapx());
             psmt.setString(11,dto.getMapy());
             psmt.setString(12,dto.getMlevel());
-            psmt.setString(13,dto.getSigungucode());
+            psmt.setInt(13,dto.getSigungucode());
             psmt.setString(14,dto.getTel());
             psmt.setString(15,dto.getTitle());
 
@@ -177,4 +177,5 @@ public class TouritemDAO extends JDBConnect {
             e.printStackTrace();
         }
     }
+
 }

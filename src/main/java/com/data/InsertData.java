@@ -62,15 +62,15 @@ public class InsertData {
                     dto.setCat1((String)tourItem.get("cat1"));
                     dto.setCat2((String)tourItem.get("cat2"));
                     dto.setCat3((String)tourItem.get("cat3"));
-                    dto.setAreacode((String)tourItem.get("areacode"));
-                    dto.setContenttypeid((String)tourItem.get("contenttypeid"));
+                    dto.setAreacode(Integer.parseInt((String)tourItem.get("areacode")));
+                    dto.setContenttypeid(Integer.parseInt((String)tourItem.get("contenttypeid")));
                     dto.setAddr1((String)tourItem.get("addr1"));
                     dto.setAddr2((String)tourItem.get("addr2"));
                     dto.setFirstimage(firstImage);
                     dto.setMapx((String)tourItem.get("mapx"));
                     dto.setMapy((String)tourItem.get("mapy"));
                     dto.setMlevel((String)tourItem.get("mlevel"));
-                    dto.setSigungucode((String)tourItem.get("sigungucode"));
+                    dto.setSigungucode(Integer.parseInt((String)tourItem.get("sigungucode")));
                     dto.setTel((String)tourItem.get("tel"));
                     dto.setTitle((String)tourItem.get("title"));
 
@@ -123,7 +123,7 @@ public class InsertData {
                     AreaDTO dto = new AreaDTO();
                     JSONObject area = (JSONObject)item.get(i);
 
-                    String areacode = (String)area.get("code");
+                    int areacode = Integer.parseInt((String)area.get("code"));
 
                     dto.setJ_areacode(areacode);
                     dto.setJ_area_name((String)area.get("name"));
@@ -139,7 +139,7 @@ public class InsertData {
         }
     }
 
-    public void sigunguCode(String areacode) throws Exception {
+    public void sigunguCode(int areacode) throws Exception {
         String searchType = "areaCode1";
         int numOfRows = 300;
 
@@ -175,7 +175,7 @@ public class InsertData {
                 SigunguDTO dto = new SigunguDTO();
                 JSONObject sigungu = (JSONObject)item.get(i);
 
-                dto.setS_sigungucode((String)sigungu.get("code"));
+                dto.setS_sigungucode(Integer.parseInt((String)sigungu.get("code")));
                 dto.setS_areacode(areacode);
                 dto.setSigungu_name((String)sigungu.get("name"));
 
