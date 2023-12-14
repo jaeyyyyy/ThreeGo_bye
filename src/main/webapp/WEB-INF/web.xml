@@ -90,6 +90,4 @@
 <!--        <servlet-name>MVCBoardWrite</servlet-name>-->
 <!--        <url-pattern>/mvcboard/write.do</url-pattern>-->
 <!--    </servlet-mapping>-->
-
-
 </web-app>
