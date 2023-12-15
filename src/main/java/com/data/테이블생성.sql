@@ -30,15 +30,15 @@ CREATE TABLE "TOURITEM" (
                             cat1   varchar2(40),
                             cat2   varchar2(40),
                             cat3   varchar2(40),
-                            areacode   varchar2(40),
-                            contenttypeid   varchar2(40),
+                            areacode   number(38,0),
+                            contenttypeid   number(38,0),
                             addr1   varchar2(200),
                             addr2   varchar2(200),
                             firstimage   varchar2(600),
                             mapx   varchar2(200),
                             mapy   varchar2(200),
                             mlevel   varchar2(40),
-                            sigungucode   varchar2(40),
+                            sigungucode   number(38,0),
                             tel   varchar2(200),
                             title   varchar2(200)
 );
@@ -54,27 +54,29 @@ CREATE TABLE "T_CAT2" (
                           cat1   varchar2(40)      NOT NULL
 );
 
+
 CREATE TABLE "T_CAT3" (
                           cat3   varchar2(40)      NOT NULL,
                           cat3_name   varchar2(200)      NOT NULL,
                           cat2   varchar2(40)      NOT NULL,
-                          cat1   varchar2(40)      NOT NULL
+                          cat1 varchar2(40)      NOT NULL
 );
 
 CREATE TABLE "T_AREA" (
-                          j_areacode   varchar2(40)      NOT NULL,
+                          j_areacode   number(38,0)      NOT NULL,
                           j_area_name   varchar2(200)      NOT NULL
 );
 
 
 CREATE TABLE "T_SIGUNGU" (
-                             s_sigungucode   varchar2(40)      NOT NULL,
-                             s_areacode   varchar2(40)      NOT NULL,
+                             s_sigungucode   number(38,0)      NOT NULL,
+                             s_areacode   number(38,0)      NOT NULL,
                              sigungu_name   varchar2(200)      NOT NULL
 );
 
+
 CREATE TABLE "T_C_TYPE" (
-                            contenttypeid   varchar2(40)      NOT NULL,
+                            contenttypeid   number(38,0)      NOT NULL,
                             ctype_name   varchar2(200)      NOT NULL
 );
 
