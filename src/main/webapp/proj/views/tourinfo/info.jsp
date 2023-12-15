@@ -2,6 +2,9 @@
 <html>
 <head>
     <title>관광지 정보 | 3GO</title>
+    <script>
+
+    </script>
 </head>
 <body>
     <div id="area"></div>
