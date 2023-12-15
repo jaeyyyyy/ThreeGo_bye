@@ -30,15 +30,15 @@ CREATE TABLE "TOURITEM" (
                             cat1   varchar2(40),
                             cat2   varchar2(40),
                             cat3   varchar2(40),
-                            areacode   number(38,0),
-                            contenttypeid   number(38,0),
+                            areacode   varchar2(40),
+                            contenttypeid   varchar2(40),
                             addr1   varchar2(200),
                             addr2   varchar2(200),
                             firstimage   varchar2(600),
                             mapx   varchar2(200),
                             mapy   varchar2(200),
                             mlevel   varchar2(40),
-                            sigungucode   number(38,0),
+                            sigungucode   varchar2(40),
                             tel   varchar2(200),
                             title   varchar2(200)
 );

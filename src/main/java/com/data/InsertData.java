@@ -18,7 +18,7 @@ public class InsertData {
     //TOURITEM 데이터 추가
     public void tourItem() {
         String searchType = "areaBasedList1";
-        int numOfRows = 100;
+        int numOfRows = 51809;
         int totalData = 51809;
         int totalPage = totalData % numOfRows == 0 ? totalData / numOfRows : (totalData / numOfRows) + 1;
 
