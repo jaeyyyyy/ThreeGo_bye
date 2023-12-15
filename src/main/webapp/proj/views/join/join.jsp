@@ -61,6 +61,12 @@
                     <input type="password" id="pwCheck" class="form-control form-control-sm" maxlength="20" placeholder="입력한 비밀번호를 확인해주세요.">
                 </div>
 
+                <!-- 성명 입력 -->
+                <div class="userInput m-5">
+                    <h4 class="list">성명</h4>
+                    <input type="text" id="name" class="form-control form-control-sm" maxlength="20" placeholder="이름을 입력해주세요.">
+                </div>
+
                 <!-- 이메일 입력 -->
                 <div class="userInput m-5">
                     <h4 class="list">비밀번호 재확인</h4>
@@ -71,17 +77,7 @@
                     </div>
                 </div>
 
-                <!-- 성명 입력 -->
-                <div class="userInput m-5">
-                    <h4 class="list">성명</h4>
-                    <input type="text" id="name" class="form-control form-control-sm" maxlength="20" placeholder="이름을 입력해주세요.">
-                </div>
-                <!-- 닉네임 입력 -->
-                <div class="userInput m-5">
-                    <h4 class="list">닉네임</h4>
-                    <input type="text" id="nickname" class="form-control form-control-sm" maxlength="10" placeholder="닉네임을 입력해주세요.">
-                </div>
-
+                <%-- 가입버튼--%>
                 <div class="col text-center">
                     <input type="submit" value="가입" class="btn btn-primary btn-md">
                 </div>
