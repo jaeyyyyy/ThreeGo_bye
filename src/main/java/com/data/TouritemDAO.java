@@ -67,19 +67,23 @@ public class TouritemDAO extends JDBConnect {
             query += " WHERE ";
             if(map.containsKey("area")){
                 query += "area = " + map.get("area") + " ";
-                if(andCount-- > 0) query += "AND ";
+                if(andCount > 0) query += "AND ";
+                andCount--;
             }
             if(map.containsKey("sigungu")){
                 query += "sigungu = " + map.get("sigungu") + " ";
-                if(andCount-- > 0) query += "AND ";
+                if(andCount > 0) query += "AND ";
+                andCount--;
             }
             if(map.containsKey("cat1")){
                 query += "cat1 = " + map.get("cat1") + " ";
-                if(andCount-- > 0) query += "AND ";
+                if(andCount > 0) query += "AND ";
+                andCount--;
             }
             if(map.containsKey("cat2")){
                 query += "cat2 = " + map.get("cat2") + " ";
-                if(andCount-- > 0) query += "AND ";
+                if(andCount > 0) query += "AND ";
+                andCount--;
             }
             if(map.containsKey("cat3")){
                 query += "cat3 = " + map.get("cat3") + " ";

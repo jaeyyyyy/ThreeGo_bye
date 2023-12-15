@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -37,7 +38,12 @@ public class InfoController extends HttpServlet {
 
         List<TouritemDTO> touritemList = ti_dao.selectList(map);
         List<AreaDTO> areaList = ar_dao.selectList();
-        List<SigunguDTO> sigunguList = si_dao.selectList(area);
+        List<SigunguDTO> sigunguList;
+        if(area == null){
+            sigunguList = new ArrayList<>();
+        }else {
+            sigunguList = si_dao.selectList(area);
+        }
 
         ti_dao.close();
         ar_dao.close();
