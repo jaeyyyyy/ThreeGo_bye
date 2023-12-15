@@ -24,53 +24,18 @@
     <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
 </head>
 <body>
-<!-- Nav bar-->
-<div class="top-header">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="../index.jsp">
-                <i class="bi-pin-map-fill m-auto text-primary"></i>
-                <!--<img src="#" target="blank" alt="logo" height="100">-->
-            </a>
-
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="">여행정보</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">여행일정</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">커뮤니티</a>
-                    </li>
-
-
-                    <div class="nav-right navbar">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">로그인</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">회원가입</a>
-                        </li>
-                    </div>
-                </ul>
-            </div>
-        </nav>
-    </div>
-</div>
+<!-- header-->
+<jsp:include page="../common/header.jsp"/>
 <div id="wrap" class="wrapper">
     <form action="join_ok.jsp" method ="post" name="join" id="join">
         <!-- 회원가입 타이틀부분 -->
-        <header>
-            <div id="header">
-                <h1 class="text-center">
-                    <!--<span><img alt="프로젝트 메인 제목" src="#"></span>-->
-                    회원가입 정보 입력
-                </h1>
-                <p class="text-center">회원가입에 필요한 정보를 기입해주세요.</p>
-            </div>
-        </header>
+        <div id="header">
+            <h1 class="text-center">
+                <!--<span><img alt="프로젝트 메인 제목" src="#"></span>-->
+                회원가입 정보 입력
+            </h1>
+            <p class="text-center">회원가입에 필요한 정보를 기입해주세요.</p>
+        </div>
 
         <div id="container">
             <div class="row_group">
@@ -96,6 +61,12 @@
                     <input type="password" id="pwCheck" class="form-control form-control-sm" maxlength="20" placeholder="입력한 비밀번호를 확인해주세요.">
                 </div>
 
+                <!-- 성명 입력 -->
+                <div class="userInput m-5">
+                    <h4 class="list">성명</h4>
+                    <input type="text" id="name" class="form-control form-control-sm" maxlength="20" placeholder="이름을 입력해주세요.">
+                </div>
+
                 <!-- 이메일 입력 -->
                 <div class="userInput m-5">
                     <h4 class="list">비밀번호 재확인</h4>
@@ -106,17 +77,7 @@
                     </div>
                 </div>
 
-                <!-- 성명 입력 -->
-                <div class="userInput m-5">
-                    <h4 class="list">성명</h4>
-                    <input type="text" id="name" class="form-control form-control-sm" maxlength="20" placeholder="이름을 입력해주세요.">
-                </div>
-                <!-- 닉네임 입력 -->
-                <div class="userInput m-5">
-                    <h4 class="list">닉네임</h4>
-                    <input type="text" id="nickname" class="form-control form-control-sm" maxlength="10" placeholder="닉네임을 입력해주세요.">
-                </div>
-
+                <%-- 가입버튼--%>
                 <div class="col text-center">
                     <input type="submit" value="가입" class="btn btn-primary btn-md">
                 </div>
@@ -127,4 +88,7 @@
 
     </form>
 </div>
+<!--footer-->
+<jsp:include page="../common/footer.jsp"/>
 </body>
+</html>

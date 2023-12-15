@@ -1,18 +1,3 @@
-/*navvar 추가*/
-.card {
-    transition: 0.2s ease-in-out;
-}
-.card:hover {
-    transform: scale(1.05);
-    cursor: pointer;
-}
-.card img {
-    width: 100%;
-    height: 12em;
-}
-
-
-
 .nav-link {
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 14px;
@@ -46,7 +31,6 @@
 }
 
 .top-header {
-    height: 30rem;
     background: linear-gradient(to bottom left, #77c4e3, #8176b5);
     background-size: cover;
     background-position: center;
@@ -63,11 +47,6 @@
 .nav-right {
     margin-left: auto;
 }
-
-.text-white {
-    font-family: 'Noto Sans KR', sans-serif;
-}
-
 .navbar-nav {
     justify-content: space-between;
     width: 100%;
@@ -77,13 +56,4 @@
     .navbar-collapse {
         flex-basis: 0;
     }
-}
-
-/**커뮤니티 게시판**/
-.card-deck {
-    display: flex;
-    gap: 1rem;
-}
-.card-item {
-    width: calc(100% / 3);
 }
