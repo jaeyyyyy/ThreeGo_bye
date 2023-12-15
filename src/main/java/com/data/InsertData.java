@@ -10,7 +10,7 @@ import java.net.URL;
 
 public class InsertData {
     private static String endPoint = "https://apis.data.go.kr/B551011/KorService1/";
-    private static String serviceKey = "xsdYHhNhYtCKEIiJVyY0CXvA5xcMWGYz9rFAAjLhfr6a7xD82nXkq3gW7egZBeTAKAsSfbyj5v45%2BtNn32cHhQ%3D%3D";
+    private static String serviceKey = "oTDxn0pUfD9W2CYiwN1aH5IaiEsa%2Bk23JIEWxzyyGm%2FIYyM4%2FsYAdS0JSWOkITYE2IAla8ube%2FgTIe4T2X2IiA%3D%3D";
     private static String MobileOS = "ETC";
     private static String MobileApp = "TEST";
 
@@ -36,6 +36,8 @@ public class InsertData {
                         + "&MobileApp=" + MobileApp
                         + "&serviceKey=" + serviceKey
                         + "&_type=json");
+
+                System.out.println(url);
 
                 BufferedReader bf;
 
