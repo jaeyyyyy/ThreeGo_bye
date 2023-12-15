@@ -26,16 +26,27 @@
 <!-- header-->
 <jsp:include page="../common/header.jsp"/>
 <form action="login_ok.jsp" method="post">
-    <div id="header">
+    <div id="header" >
         <h1 class="text-center">
             <!--<span><img alt="프로젝트 메인 제목" src="#"></span>-->
             로그인
         </h1>
         <p class="text-center">회원가입에 필요한 정보를 기입해주세요.</p>
     </div>
-    아이디:<input type="text" name="id"><br/>
-    비밀번호:<input type="password" name="pw"><br/>
-    <input type="submit" value="로그인"><br/>
+<%--아이디--%>
+    <div class="userInput m-5">
+        <h4 class="list">아이디</h4>
+        <input type="text" name="id"  class="form-control form-control-sm" maxlength="20" placeholder="아이디를 입력하세요."><br/>
+    </div>
+<%--비밀번호--%>
+    <div class="userInput m-5">
+        <h4 class="list">비밀번호</h4>
+        <input type="password" name="pw" class="form-control form-control-sm" maxlength="20" placeholder="비밀번호를 입력하세요."><br/>
+    </div>
+<%--    로그인 버튼--%>
+    <div class="col text-center">
+        <input type="submit" value="로그인" class="btn btn-primary btn-md"><br/>
+    </div>
 </form>
 <!--footer-->
 <jsp:include page="../common/footer.jsp"/>
