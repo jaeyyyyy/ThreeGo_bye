@@ -25,12 +25,34 @@
 <body>
 <!-- header-->
 <jsp:include page="../common/header.jsp"/>
-<form action="login_ok.jsp" method="post">
+
+<%--validateForm--%>
+<script>
+    function validateForm(form){
+        if(!form.user_id.value){
+            alert("아이디 입력 하세요");
+            return false;
+        }
+        if(!form.user_pw.value){
+            alert("패스워드 입력 하세요");
+            return false;
+        }
+    }
+</script>
+
+<form action="login_ok.jsp" method="post" name="loginFrm" onsubmit="return validateForm(this)">
     <div id="header" >
         <h1 class="text-center">
             <!--<span><img alt="프로젝트 메인 제목" src="#"></span>-->
             로그인
         </h1>
+        <span style="color:red; font-size: 1.2em;">
+        <%=request.getAttribute("LoginErrMsg") == null ? "" : request.getAttribute("LoginErrMsg")%>
+        </span>
+        <%
+            if(session.getAttribute("UserId") == null){
+        %>
+
         <p class="text-center">회원가입에 필요한 정보를 기입해주세요.</p>
     </div>
 <%--아이디--%>
