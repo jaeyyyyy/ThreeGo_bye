@@ -78,3 +78,12 @@
         flex-basis: 0;
     }
 }
+
+/**커뮤니티 게시판**/
+.card-deck {
+    display: flex;
+    gap: 1rem;
+}
+.card-item {
+    width: calc(100% / 3);
+}
