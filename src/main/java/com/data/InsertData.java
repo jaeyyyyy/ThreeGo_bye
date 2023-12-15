@@ -62,15 +62,15 @@ public class InsertData {
                     dto.setCat1((String)tourItem.get("cat1"));
                     dto.setCat2((String)tourItem.get("cat2"));
                     dto.setCat3((String)tourItem.get("cat3"));
-                    dto.setAreacode(Integer.parseInt((String)tourItem.get("areacode")));
-                    dto.setContenttypeid(Integer.parseInt((String)tourItem.get("contenttypeid")));
+                    dto.setAreacode((String)tourItem.get("areacode"));
+                    dto.setContenttypeid((String)tourItem.get("contenttypeid"));
                     dto.setAddr1((String)tourItem.get("addr1"));
                     dto.setAddr2((String)tourItem.get("addr2"));
                     dto.setFirstimage(firstImage);
                     dto.setMapx((String)tourItem.get("mapx"));
                     dto.setMapy((String)tourItem.get("mapy"));
                     dto.setMlevel((String)tourItem.get("mlevel"));
-                    dto.setSigungucode(Integer.parseInt((String)tourItem.get("sigungucode")));
+                    dto.setSigungucode((String)tourItem.get("sigungucode"));
                     dto.setTel((String)tourItem.get("tel"));
                     dto.setTitle((String)tourItem.get("title"));
 

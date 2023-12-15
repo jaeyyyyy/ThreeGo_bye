@@ -5,15 +5,15 @@ public class TouritemDTO {
     private String cat1;
     private String cat2;
     private String cat3;
-    private int areacode;
-    private int contenttypeid;
+    private String areacode;
+    private String contenttypeid;
     private String addr1;
     private String addr2;
     private String firstimage;
     private String mapx;
     private String mapy;
     private String mlevel;
-    private int sigungucode;
+    private String sigungucode;
     private String tel;
     private String title;
 
@@ -49,19 +49,19 @@ public class TouritemDTO {
         this.cat3 = cat3;
     }
 
-    public int getAreacode() {
+    public String getAreacode() {
         return areacode;
     }
 
-    public void setAreacode(int areacode) {
+    public void setAreacode(String areacode) {
         this.areacode = areacode;
     }
 
-    public int getContenttypeid() {
+    public String getContenttypeid() {
         return contenttypeid;
     }
 
-    public void setContenttypeid(int contenttypeid) {
+    public void setContenttypeid(String contenttypeid) {
         this.contenttypeid = contenttypeid;
     }
 
@@ -113,11 +113,11 @@ public class TouritemDTO {
         this.mlevel = mlevel;
     }
 
-    public int getSigungucode() {
+    public String getSigungucode() {
         return sigungucode;
     }
 
-    public void setSigungucode(int sigungucode) {
+    public void setSigungucode(String sigungucode) {
         this.sigungucode = sigungucode;
     }
 
