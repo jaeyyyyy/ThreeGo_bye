@@ -6,11 +6,6 @@
 <%
     request.setCharacterEncoding("UTF-8");
 
-    String id = request.getParameter("id");
-    String pw = request.getParameter("pw");
-    String name = request.getParameter("name");
-
-
     // 1.변수선언
     String url = "jdbc:oracle:thin:@localhost:1521:ORCL";
     String id = "test";
@@ -26,13 +21,8 @@
         Class.forName("oracle.jdbc.driver.OracleDriver");
 
         // 2. conn 생성
-        con = DriverManager.getConnection(url, uid, upw);
+        con = DriverManager.getConnection(url, id, pw);
 
-        // 3. pstmt 생성
-        psmt = con.prepareStatement(sql);
-        psmt.setString(1, id);
-        psmt.setString(2, pw);
-        psmt.setString(3, name);
 
 
         // 4. sql문 실행
